@@ -4,7 +4,7 @@ import { AppContext } from "./context/AppContext";
 import axios from "axios";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import ProductsPage from "./pages/ProductsPage";
 import ProductPage from "./pages/ProductPage";
