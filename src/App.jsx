@@ -90,9 +90,6 @@ function App() {
         </Routes>
         <Newsletter />
         <Footer />
-        {/* <Nav/>
-         <Newsletter />
-        <Footer />   */}
       </Router>
     </AppContext.Provider>
   );
