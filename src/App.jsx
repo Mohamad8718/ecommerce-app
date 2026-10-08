@@ -4,7 +4,7 @@ import { AppContext } from "./context/AppContext";
 import axios from "axios";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import ProductsPage from "./pages/ProductsPage";
 import ProductPage from "./pages/ProductPage";
@@ -81,7 +81,7 @@ function App() {
         cartLength,
       }}
     >
-      <HashRouter>
+      <Router>
         <Nav />
         <Routes>
           <Route path="/" element={<Homepage />} />
@@ -90,7 +90,7 @@ function App() {
         </Routes>
         <Newsletter />
         <Footer />
-      </HashRouter>
+      </Router>
     </AppContext.Provider>
   );
 }
